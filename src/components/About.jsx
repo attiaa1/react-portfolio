@@ -1,13 +1,9 @@
 import React from 'react';
-import { Document, Page } from 'react-pdf';
 import '../App.css'
 
 const About = () => {
   return (
-    <div className='container'>
-
       <div className='centered-block'>
-          
           <p className='blurb'>
           <h1 style={{textDecorationLine: "underline"}}>ABOUT</h1>
             I am a team player, well-rounded in hardware, software, and spoken languages. I'm also a passionate advocate for diversity, equity, inclusion, and professionalism. In my free time, I am a musician, like to sew, bike around my town, and am a dedicated volunteer at the <a className='myLink'href='https://www.youtube.com/watch?v=kDy0CcCEcL4'>Kitkat Playroom</a> in the south New Jersey area, where I care for fostered kittens. 
@@ -25,19 +21,22 @@ const About = () => {
 
 
           <h2>My Resume</h2>
-          
+          <p className='blurb'>
+            Unfortunately, while using Vite I discovered a bug not allowing me to render PDFs using react-pdf. <br></br>Bear with me while I work through it, in the mean time, you can see my resume from my LinkedIn <a className='myLink' href='https://www.linkedin.com/in/adam-attia2/overlay/1718154375009/single-media-viewer/?profileId=ACoAACwJg_gBB2cZ88GlCmrgVnOQUiEGwUZP5Yk'>here.</a>.
+          </p>
+
+
           
           <h2>Page Info</h2>
-          <p>
+          <p className='blurb'>
             This page was created using <a href='https://react.dev/' className='myLink'>React</a>, <a className='myLink' href="https://vitejs.dev/guide/cli.html">Vite</a>, and deployed with Nginx to be served via my Raspberry Pi 3 board, this last bit is still up in the air.
           </p>
 
           <h2>Image Credits</h2>
-          <p>
+          <p className='blurb'>
             The high quality images used in this website are from <a className='myLink' href='https://unsplash.com/developers'>Unsplash API</a>, while the icons are via <a className='myLink' href='https://dashboard.clearbit.com/docs#logo-api'>Clearbit API</a> or FontAwesome.
           </p>
       </div>
-    </div>
   )
 };
 

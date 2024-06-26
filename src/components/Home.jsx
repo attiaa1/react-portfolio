@@ -2,7 +2,6 @@ import React from 'react';
 
 const Home = () => {
   return (
-    <div className='container'>
       <div className='centered-block'>
         <body> 
           Hi, my name is <br></br> <span style={{fontWeight: "bold",fontSize: "64px", color: "var(--text-color)", fontStyle: "italic"}}>Adam Attia</span>
@@ -78,7 +77,7 @@ const Home = () => {
         
 
         </div>
-      </div>
+        <p>Feel free to explore my page and learn some more about me. It's constantly improving!</p>
       </div>
   );
 };
