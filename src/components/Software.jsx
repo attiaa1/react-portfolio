@@ -3,7 +3,7 @@ import React from 'react';
 const Software = () => {
   return (
     <div className='centered-block'>
-      <h1> Software</h1>
+      <h1 style={{textDecorationLine: "underline"}}> Software</h1>
     </div>
   );
 };

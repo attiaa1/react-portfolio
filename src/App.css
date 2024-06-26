@@ -17,16 +17,16 @@ body,html {
   background-image: url('./assets/bg.avif');
   background-position: center;
   background-size: cover;
-  height: 100vh;
-  background-attachment: scroll;
+  height: 100%;
+  background-attachment: local;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
 }
 
 .centered-block {
-  width: 50%;
+  width: 100%;
   padding: 20px;
   text-align: center;
   border-radius: 10px;
@@ -35,17 +35,26 @@ body,html {
 }
 
 .navBar {
-  flex-direction: row-reverse;
-  justify-content: bottom;
-  padding-top: 1%;
-  height: 100%;
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100vh; /* This will make your navbar take the full height of the viewport */
+  width: 0px; /* Adjust this value to set the width of your navbar */
+  position: relative; /* This will make your navbar stay in place when you scroll */
+  left: 0; /* This positions your navbar at the left edge of the viewport */
 }
 
 .navItem {
   color: var(--text-color);
-  font-style: normal;
+  font-weight: bold;
   font-size: 24px;
+  width: 200px;
+  margin: 10px;
+}
+
+.navItem:hover {
+  color: var(--accent-color);
 }
 
 .logo {
@@ -61,3 +70,37 @@ ul {
   flex-direction: column;
 }
 
+.myLink {
+  color: var(--text-color);
+}
+
+.myLink:hover{
+  color: var(--accent-color)
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap:nowrap
+}
+
+.skillsGrid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tech-logo {
+  margin: 30px;
+}
+
+.blurb {
+  color: var(--text-color);
+  gap: inherit;
+  display: inline-block;
+  width: 65%;
+  clear: both;
+
+}

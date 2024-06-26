@@ -13,32 +13,32 @@ const App = () => {
 
   return (
     <div className='bg'>
-    <nav className='navBar'>
-        <ul>
-          <Link className='navItem' to='/'>
-          <FontAwesomeIcon icon={faHome} /> Home
-          </Link> <br />
-          <Link className='navItem' to='/software'>
-          <FontAwesomeIcon icon={faComputer} /> SW
-          </Link> <br />
-          <Link className='navItem' to='/experience'>
-          <FontAwesomeIcon icon={faLock} /> Experience
-          </Link> <br />
-          <Link className='navItem' to='/about'>
-          <FontAwesomeIcon icon={faInfoCircle} /> About
-          </Link> <br />
-        </ul>
-      </nav>
+      <nav className='navBar'>
+          <ul>
+            <Link className='navItem' to='/'>
+            <FontAwesomeIcon icon={faHome} /> Home
+            </Link> <br />
+            <Link className='navItem' to='/about'>
+            <FontAwesomeIcon icon={faInfoCircle} /> About Me
+            </Link> <br />
+            <Link className='navItem' to='/software'>
+            <FontAwesomeIcon icon={faComputer} /> Software
+            </Link> <br />
+            <Link className='navItem' to='/experience'>
+            <FontAwesomeIcon icon={faLock} /> Experience
+            </Link> <br />
+          </ul>
+        </nav>
 
-      <div>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/experience' element={<Experience />} />
-          <Route path='/software' element={<Software />} />
-          <Route path='/about' element={<About />} />
-          <Route path='*' element={<NoMatch />} />
-        </Routes>
-      </div>
+        <div className='centered-block'>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/experience' element={<Experience />} />
+            <Route path='/software' element={<Software />} />
+            <Route path='/about' element={<About />} />
+            <Route path='*' element={<NoMatch />} />
+          </Routes>
+        </div>
     </div>
   )
 }
