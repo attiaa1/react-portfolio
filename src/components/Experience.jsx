@@ -50,7 +50,7 @@ const Experience = () => {
 
   const icons = {
     'DevSecOps Engineer':  <i class="devicon-azure-plain" style={{fontSize:"48px", margin: "5px"}}></i> ,
-    'Front-end React Developer': <i class="devicon-react-original" style={{fontSize:"48px", margin: "5px"}}></i>,
+    'Front-End Developer': <i class="devicon-react-original" style={{fontSize:"48px", margin: "5px"}}></i>,
     'Electrical Design Engineer': <i class="devicon-lumen-original" style={{fontSize:"48px", margin: "5px"}}></i>,
   };
 
