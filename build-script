@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+npm run build
+sudo cp -r ./dist/* /var/www/html
+export PUBLIC_IP=$(curl -4 ifconfig.me) 
+echo "Public IP is: $PUBLIC_IP"
+#sudo rm /etc/nginx/sites-enabled/*
+sudo ln -s /etc/nginx/sites-available/react-portfolio.conf /etc/nginx/sites-enabled/
+sudo systemctl reload nginx
+
