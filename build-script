@@ -2,8 +2,8 @@
 npm run build
 sudo cp -r ./dist/* /var/www/html
 export PUBLIC_IP=$(curl -4 ifconfig.me) 
-echo "Public IP is: $PUBLIC_IP"
-#sudo rm /etc/nginx/sites-enabled/*
-sudo ln -s /etc/nginx/sites-available/react-portfolio.conf /etc/nginx/sites-enabled/
+echo "Server hosted on following: http://$PUBLIC_IP/"
+sudo rm -rf /var/www/73.160.140.242/*
+sudo cp -R dist/* /var/www/73.160.140.242/
 sudo systemctl reload nginx
 

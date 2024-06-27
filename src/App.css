@@ -18,10 +18,11 @@ body,html {
   background-position: center;
   background-size: cover;
   height: 100%;
-  background-attachment: scroll;
+  background-attachment: fixed;
   display: flex;
-  justify-content: center;
-  background-repeat: no-repeat;
+  align-items: flex-start;
+  background-repeat: repeat-y;
+  flex-direction: column;
 }
 
 .centered-block {
@@ -33,21 +34,22 @@ body,html {
 }
 
 .navBar {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  height: 100vh; /* This will make your navbar take the full height of the viewport */
-  width: 100px; /* Adjust this value to set the width of your navbar */
-  position: relative; /* This will make your navbar stay in place when you scroll */
-  left: 0; /* This positions your navbar at the left edge of the viewport */
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 10vh; 
+  width: 100vw; 
+  position: sticky; 
+  top: 0; 
+  transition: background-color 0.5s ease;
 }
 
 .navItem {
   color: var(--text-color);
   font-weight: bold;
   font-size: 24px;
-  width: 200px;
+  width: 150px;
   margin: 10px;
 }
 
@@ -60,6 +62,12 @@ body,html {
   height: 100px;
   align-items: center;
   flex-direction: column;
+}
+
+.ulNav {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: row;
 }
 
 ul {
@@ -84,6 +92,21 @@ ul {
 
 .tech-logo {
   margin: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.tech-logo:hover {
+  transform: scale(1.2);
+}
+
+.contact-logo {
+  margin: 15px;
+  display: inline-flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.contact-logo:hover {
+  transform: scale(1.4);
 }
 
 .blurb {
@@ -93,4 +116,58 @@ ul {
   width: 65%;
   clear: both;
 
+}
+.blurbUL {
+  color: var(--text-color);
+  gap: inherit;
+  display: inline-block;
+  width: 50%;
+  clear: both;
+
+}
+
+.emailBox {
+  background-color: #34495e;
+  color: var(--text-color);
+  padding: 20px;
+  margin: 10px;
+  font-size: 24px;
+  line-height: 1.5;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+  width: 20%;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.email, .msg {
+  display: space-around;
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--border-color);
+  background-color: var(--text-color);
+  color: var(--primary-color);
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+}
+
+.btn {
+  display: space-around;
+  background-color: #9b59b6;
+  width: 70%;
+  font-family: 'Nunito Sans', sans-serif;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: var(--text-color);
+  
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover{
+  background-color: var(--secondary-color)
 }

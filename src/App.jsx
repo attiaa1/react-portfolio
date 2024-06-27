@@ -10,11 +10,26 @@ import { faHome, faInfoCircle, faLock, faComputer } from '@fortawesome/free-soli
 import './App.css'
 
 const App = () => {
+  
+  // To handle Navigation bar opaqueness while scrolling
+  const[navBarBackground, setNavBarBackground] = useState('transparent');
+  useEffect(() => {
+    const handleUserScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > 200) {setNavBarBackground('#2c3e50');}
+      else {setNavBarBackground('transparent')}
+    };
+
+    window.addEventListener('scroll', handleUserScroll, {passive:true});
+
+    return () => window.removeEventListener('scroll', handleUserScroll);
+
+    },[]);
 
   return (
     <div className='bg'>
-      <nav className='navBar'>
-          <ul>
+      <nav className='navBar' style={{backgroundColor: navBarBackground}}>
+          <ul className='ulNav'>
             <Link className='navItem' to='/'>
             <FontAwesomeIcon icon={faHome} /> Home
             </Link> <br />

@@ -5,7 +5,7 @@ const About = () => {
   return (
       <div className='centered-block'>
           <p className='blurb'>
-          <h1 style={{textDecorationLine: "underline"}}>ABOUT</h1>
+          <h1 style={{textDecorationLine: "underline"}}>About</h1>
             I am a team player, well-rounded in hardware, software, and spoken languages. I'm also a passionate advocate for diversity, equity, inclusion, and professionalism. In my free time, I am a musician, like to sew, bike around my town, and am a dedicated volunteer at the <a className='myLink'href='https://www.youtube.com/watch?v=kDy0CcCEcL4'>Kitkat Playroom</a> in the south New Jersey area, where I care for fostered kittens. 
           </p>
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import ContactForm from './ContactForm';
 
 const Home = () => {
   return (
@@ -6,7 +7,7 @@ const Home = () => {
         <body> 
           Hi, my name is <br></br> <span style={{fontWeight: "bold",fontSize: "64px", color: "var(--text-color)", fontStyle: "italic"}}>Adam Attia</span>
         </body>
-        <p>I'm an engineer, currently specializing in DevOps with experience in:</p> 
+        <p>I'm a Software Engineer, currently specializing in DevOps with experience in:</p> 
         <div className='skillsGrid'>
           <div className='tech-logo'> 
               <i class="devicon-azure-plain" style={{fontSize:"64px", margin: "5px"}}></i> <br></br>Azure
@@ -77,7 +78,25 @@ const Home = () => {
         
 
         </div>
-        <p>Feel free to explore my page and learn some more about me. It's constantly improving!</p>
+        <p>Feel free to explore my page and learn some more about me. <br></br> We're both constantly improving!</p>
+        <span style={{fontSize: "32px", fontStyle: "italic"}}>Feeling Social?</span> <br></br>
+        <a style={{display: "inline-block", color: "#ecf0f1"}} href='https://www.linkedin.com/in/adam-attia2/'>
+        <div className='contact-logo'> 
+                <i class="devicon-linkedin-plain" style={{fontSize:"30px"}}></i>
+              </div>
+        </a>
+        <a style={{display: "inline-block", color: "#ecf0f1"}} href='https://github.com/attiaa1'>
+            <div className='contact-logo'> 
+                <i class="devicon-github-plain" style={{fontSize:"30px"}}></i>
+            </div>
+        </a>
+
+        <div className='centered-block'>
+          <div className='emailBox'>
+              <ContactForm></ContactForm>
+          </div>
+        </div>
+
       </div>
   );
 };
