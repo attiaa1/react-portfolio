@@ -2,7 +2,6 @@
 sudo unlink /etc/nginx/sites-enabled/*
 sudo ln -s /etc/nginx/sites-available/adamattia.me /etc/nginx/sites-enabled/
 sudo nginx -t
-npm run build
-sudo cp -R ./dist/* /var/www/adamattia.me/
+pm2 start index.js
 sudo systemctl reload nginx
 echo "Done!"
