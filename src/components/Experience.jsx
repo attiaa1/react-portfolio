@@ -31,7 +31,7 @@ const Experience = () => {
       ]
     },
     {
-      company: 'Universal Instruments Corporation',
+      company: 'Universal Instruments Co.',
       location: 'Conklin, NY',
       duration: 'June 2022 - June 2023',
       title: 'Electrical Engineer I',
@@ -57,7 +57,7 @@ const Experience = () => {
  return (
   <div className='centered-block'>
   <h1 style={{textDecorationLine: "underline"}}> Experience</h1>
-  <div className="experience">
+  <div className="centered-block">
     {jobs.map((job, index) => (
       <div key={index} className="job">
         <h2 className="title">{job.title} @ {job.company} - {job.location}</h2>
@@ -65,7 +65,7 @@ const Experience = () => {
         {job.responsibilities.map((responsibility, i) => (
           <div key={i}>
             <h2>{responsibility.title} {icons[responsibility.title]}</h2>
-            <ul className="tasks">
+            <ul>
               {responsibility.tasks.map((task, j) => (
                 <li key={j}>{task}</li>
               ))}

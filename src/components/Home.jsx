@@ -4,10 +4,10 @@ import ContactForm from './ContactForm';
 const Home = () => {
   return (
       <div className='centered-block'>
-        <body> 
+        <p className='centered-block'> 
           Hi, my name is <br></br> <span style={{fontWeight: "bold",fontSize: "64px", color: "var(--text-color)", fontStyle: "italic"}}>Adam Attia</span>
-        </body>
-        <p>I'm a Software Engineer, currently specializing in DevOps with experience in:</p> 
+        </p>
+        <p className='centered-block'>I'm a Software Engineer, currently specializing in DevOps and proficient in:</p> 
         <div className='skillsGrid'>
           <div className='tech-logo'> 
               <i class="devicon-azure-plain" style={{fontSize:"64px", margin: "5px"}}></i> <br></br>Azure
@@ -36,7 +36,7 @@ const Home = () => {
         </div>
 
         <div className='tech-logo'> 
-          <i class="devicon-html5-plain" style={{fontSize:"64px", margin: "5px"}}></i> <br></br>HTML5
+          <i class="devicon-html5-plain" style={{fontSize:"64px", margin: "5px"}}></i> <br></br>HTML
         </div>
           <div className='tech-logo'> 
             <i class="devicon-css3-plain" style={{fontSize:"64px", margin: "5px"}}></i> <br></br>CSS
@@ -55,7 +55,7 @@ const Home = () => {
         <div className='skillsGrid'>
 
           <div className='tech-logo'> 
-              <i class="devicon-linux-plain" style={{fontSize:"64px", margin: "5px"}}></i> <br></br>Linux OS
+              <i class="devicon-linux-plain" style={{fontSize:"64px", margin: "5px"}}></i> <br></br>Linux
             </div>
             
           <div className='tech-logo'> 
@@ -78,7 +78,8 @@ const Home = () => {
         
 
         </div>
-        <p>Feel free to explore my page and learn some more about me. <br></br> We're both constantly improving!</p>
+        <p className='centered-block'>Explore my page and learn some more about me. <br></br> We're both constantly improving!</p>
+        <br></br>
         <span style={{fontSize: "32px", fontStyle: "italic"}}>Feeling Social?</span> <br></br>
         <a style={{display: "inline-block", color: "#ecf0f1"}} href='https://www.linkedin.com/in/adam-attia2/'>
         <div className='contact-logo'> 
@@ -90,13 +91,10 @@ const Home = () => {
                 <i class="devicon-github-plain" style={{fontSize:"30px"}}></i>
             </div>
         </a>
-
-        <div className='centered-block'>
+          <br></br>
           <div className='emailBox'>
               <ContactForm></ContactForm>
           </div>
-        </div>
-
       </div>
   );
 };

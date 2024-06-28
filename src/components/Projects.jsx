@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <div className='centered-block'>
       <h1 style={{textDecorationLine: "underline"}}> Projects</h1>
-      <p className='blurb'>
+      <p>
         <h2>Sudoku Generator and Solver</h2>
         <div className='skillsGrid'>
           <div className='tech-logo'> 
@@ -21,7 +21,7 @@ const Projects = () => {
             </div>
         </div>
       </p>
-      <ul className='blurbUL'>
+      <ul>
         <li>Built a fast and efficient Sudoku Generator and Solver using Python, with NumPy handling the heavy lifting for computations and matrix operations.</li>
         <li>Solved Sudoku puzzles using a backtracking algorithm, showcasing problem-solving skills and a deep understanding of algorithmic principles.</li>
         <li>Leveraged AWS for deploying the application via EC2 instance, ensuring accessibility and that it can handle varying user demand.</li>
@@ -30,7 +30,7 @@ const Projects = () => {
               <i class="devicon-github-original" style={{fontSize:"32px", margin: "5px"}}></i> <a className='myLink' href='https://github.com/attiaa1/sudoku'>Github Repository</a>
             </div>
 
-      <p className='blurb'>
+      <p>
         <h2>React Portfolio Website</h2>
         <div className='skillsGrid'>
         <div className='tech-logo'> 
@@ -46,7 +46,7 @@ const Projects = () => {
             </div>
         </div>
       </p>
-      <ul className='blurbUL'>
+      <ul>
         <li>Crafted an interactive Portfolio Website using React, showcasing proficiency in modern web development practices and component-based architecture.</li>
         <li>Utilized HTML for structuring the website content, demonstrating a solid understanding of semantic web design principles.</li>
         <li>Deployed the website using Nginx, ensuring efficient handling of HTTP requests and seamless delivery of static content.</li>

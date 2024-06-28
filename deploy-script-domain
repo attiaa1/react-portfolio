@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+echo "Building project..."
+npm run build
+#sudo unlink /etc/nginx/sites-enabled/*
+#sudo ln -s /etc/nginx/sites-available/adamattia.me /etc/nginx/sites-enabled/
+echo "Nginx listening on port 3000, nginx config linter: "
+sudo nginx -t
+pm2 restart index.js
+sudo nginx -s reload
+echo "Done!"

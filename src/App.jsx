@@ -16,7 +16,7 @@ const App = () => {
   useEffect(() => {
     const handleUserScroll = () => {
       const currentScrollY = window.scrollY;
-      if (currentScrollY > 200) {setNavBarBackground('#2c3e50');}
+      if (currentScrollY > 100) {setNavBarBackground('#2c3e50');}
       else {setNavBarBackground('transparent')}
     };
 
@@ -28,19 +28,19 @@ const App = () => {
 
   return (
     <div className='bg'>
-      <nav className='navBar' style={{backgroundColor: navBarBackground}}>
+      <nav className='navBar' style={{backgroundColor: navBarBackground, textAlign: "center"}}>
           <ul className='ulNav'>
             <Link className='navItem' to='/'>
-            <FontAwesomeIcon icon={faHome} /> Home
+            <FontAwesomeIcon icon={faHome} /><br></br>Home
             </Link> <br />
             <Link className='navItem' to='/about'>
-            <FontAwesomeIcon icon={faInfoCircle} /> About Me
+            <FontAwesomeIcon icon={faInfoCircle} /><br></br>About
             </Link> <br />
             <Link className='navItem' to='/projects'>
-            <FontAwesomeIcon icon={faComputer} /> Projects
+            <FontAwesomeIcon icon={faComputer} /><br></br>Projects
             </Link> <br />
             <Link className='navItem' to='/experience'>
-            <FontAwesomeIcon icon={faLock} /> Experience
+            <FontAwesomeIcon icon={faLock} /><br></br>Experience
             </Link> <br />
           </ul>
         </nav>
@@ -54,6 +54,7 @@ const App = () => {
             <Route path='*' element={<NoMatch />} />
           </Routes>
         </div>
+        {/* <footer>Test</footer> */}
     </div>
   )
 }
