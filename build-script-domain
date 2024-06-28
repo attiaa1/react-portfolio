@@ -2,6 +2,6 @@
 sudo unlink /etc/nginx/sites-enabled/*
 sudo ln -s /etc/nginx/sites-available/adamattia.me /etc/nginx/sites-enabled/
 sudo nginx -t
-pm2 start index.js
-sudo systemctl reload nginx
+pm2 restart index.js
+sudo nginx -s reload
 echo "Done!"
