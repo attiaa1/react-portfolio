@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+sudo unlink /etc/nginx/sites-enabled/*
+sudo ln -s /etc/nginx/sites-available/adamattia.me /etc/nginx/sites-enabled/
+sudo nginx -t
+npm run build
+sudo cp -R ./dist/* /var/www/adamattia.me/
+sudo systemctl reload nginx
+echo "Done!"

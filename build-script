@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 npm run build
-sudo cp -r ./dist/* /var/www/html
+sudo ln -s /etc/nginx/sites-available/73.160.140.242.conf /etc/nginx/sites-enabled/
 export PUBLIC_IP=$(curl -4 ifconfig.me) 
 echo "Server hosted on following: http://$PUBLIC_IP/"
 sudo rm -rf /var/www/73.160.140.242/*
