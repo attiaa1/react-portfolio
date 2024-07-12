@@ -7,6 +7,7 @@ const Home = () => {
         <p className='centered-block'> 
           Hi, my name is <br></br> <span style={{fontWeight: "bold",fontSize: "64px", color: "var(--text-color)", fontStyle: "italic"}}>Adam Attia</span>
         </p>
+        <p className='centered-block'>If you came from a networking site or event, click <a className='myLink' href='https://www.adamattia.me/resume'>here</a> for my resume.</p> 
         <p className='centered-block'>I'm a Software Engineer, currently specializing in DevOps and proficient in:</p> 
         <div className='skillsGrid'>
           <div className='tech-logo'> 

@@ -51,10 +51,13 @@ const App = () => {
             <Route path='/experience' element={<Experience />} />
             <Route path='/projects' element={<Projects />} />
             <Route path='/about' element={<About />} />
-            <Route path='*' element={<NoMatch />} />
+            <Route path='/nomatch' element={<NoMatch />} />
           </Routes>
         </div>
         {/* <footer>Test</footer> */}
+        <footer className="footer">
+          <p>Designed and created by hand with love | &copy; 2024 Adam Attia</p>
+          </footer>
     </div>
   )
 }
