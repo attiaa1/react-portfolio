@@ -1,6 +1,7 @@
+// src/components/Chunk.js
 import React from 'react';
-import '../App.css'
 import { motion } from 'framer-motion';
+import '../App.css';
 
 const Chunk = ({ direction, children }) => {
     const variants = {
@@ -13,7 +14,7 @@ const Chunk = ({ direction, children }) => {
             x: 0,
             y: 0,
             opacity: 1,
-            transition: { duration: 1 }
+            transition: { duration: 3, ease: 'easeInOut' }
         }
     };
 
