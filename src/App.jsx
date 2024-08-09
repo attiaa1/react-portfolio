@@ -60,6 +60,12 @@ const App = () => {
         <Chunk direction="east">East</Chunk>
         <Chunk direction="west">West</Chunk>
       </Section>
+      <Section className="page4">
+        <Chunk direction="north">North</Chunk>
+        <Chunk direction="south">South</Chunk>
+        <Chunk direction="east">East</Chunk>
+        <Chunk direction="west">West</Chunk>
+      </Section>
     </div>
   );
 };
