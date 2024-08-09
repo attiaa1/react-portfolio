@@ -55,7 +55,7 @@ body {
 }
 
 /* Desktop layout */
-.chunk.north {
+.page1 .chunk.north {
     top: 14%;
     left: 20%;
     width: 30%;
@@ -63,7 +63,7 @@ body {
     transform: rotate(-10deg);
 }
 
-.chunk.south {
+.page1 .chunk.south {
     top: 65%;
     left: 53%;
     height: 15%;
@@ -71,7 +71,7 @@ body {
     transform: rotate(15deg);
 }
 
-.chunk.east {
+.page1 .chunk.east {
     top: 14%;
     left: 53%;
     width: 16%;
@@ -79,7 +79,70 @@ body {
     transform: rotate(-5deg);
 }
 
-.chunk.west {
+.page1 .chunk.west {
+    top: 35%;
+    left: 20%;
+    height: 45%;
+    width: 30%;
+    transform: rotate(5deg);
+}
+
+.page2 .chunk.north {
+    top: 14%;
+    left: 20%;
+    width: 30%;
+    height: 15%;
+    transform: rotate(-10deg);
+}
+
+.page2 .chunk.south {
+    top: 65%;
+    left: 53%;
+    height: 15%;
+    width: 16%;
+    transform: rotate(15deg);
+}
+
+.page2 .chunk.east {
+    top: 14%;
+    left: 53%;
+    width: 16%;
+    height: 45%;
+    transform: rotate(-5deg);
+}
+
+.page2 .chunk.west {
+    top: 35%;
+    left: 20%;
+    height: 45%;
+    width: 30%;
+    transform: rotate(5deg);
+}
+.page3 .chunk.north {
+    top: 14%;
+    left: 20%;
+    width: 30%;
+    height: 15%;
+    transform: rotate(-10deg);
+}
+
+.page3 .chunk.south {
+    top: 65%;
+    left: 53%;
+    height: 15%;
+    width: 16%;
+    transform: rotate(15deg);
+}
+
+.page3 .chunk.east {
+    top: 14%;
+    left: 53%;
+    width: 16%;
+    height: 45%;
+    transform: rotate(-5deg);
+}
+
+.page3 .chunk.west {
     top: 35%;
     left: 20%;
     height: 45%;
@@ -94,7 +157,7 @@ body {
         padding: 10px;
     }
 
-    .chunk.north {
+    .page1 .chunk.north {
         top: 5%;
         left: 5%;
         width: 85%;
@@ -102,7 +165,7 @@ body {
         transform: rotate(0deg);
     }
 
-    .chunk.south {
+    .page1 .chunk.south {
         top: 50%;
         left: 50%;
         height: 40%;
@@ -110,7 +173,7 @@ body {
         transform: rotate(0deg);
     }
 
-    .chunk.east {
+    .page1 .chunk.east {
         top: 25%;
         left: 50%;
         width: 40%;
@@ -118,7 +181,70 @@ body {
         transform: rotate(0deg);
     }
 
-    .chunk.west {
+    .page1 .chunk.west {
+        top: 25%;
+        left: 5%;
+        height: 65%;
+        width: 35%;
+        transform: rotate(0deg);
+    }
+
+    .page2 .chunk.north {
+        top: 5%;
+        left: 5%;
+        width: 85%;
+        height: 15%;
+        transform: rotate(0deg);
+    }
+    
+    .page2 .chunk.south {
+        top: 50%;
+        left: 50%;
+        height: 40%;
+        width: 40%;
+        transform: rotate(0deg);
+    }
+    
+    .page2 .chunk.east {
+        top: 25%;
+        left: 50%;
+        width: 40%;
+        height: 20%;
+        transform: rotate(0deg);
+    }
+    
+    .page2 .chunk.west {
+        top: 25%;
+        left: 5%;
+        height: 65%;
+        width: 35%;
+        transform: rotate(0deg);
+    }
+    .page3 .chunk.north {
+        top: 5%;
+        left: 5%;
+        width: 85%;
+        height: 15%;
+        transform: rotate(0deg);
+    }
+    
+    .page3 .chunk.south {
+        top: 50%;
+        left: 50%;
+        height: 40%;
+        width: 40%;
+        transform: rotate(0deg);
+    }
+    
+    .page3 .chunk.east {
+        top: 25%;
+        left: 50%;
+        width: 40%;
+        height: 20%;
+        transform: rotate(0deg);
+    }
+    
+    .page3 .chunk.west {
         top: 25%;
         left: 5%;
         height: 65%;
