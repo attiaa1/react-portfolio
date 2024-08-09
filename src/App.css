@@ -14,12 +14,32 @@ body {
     overflow: hidden;
 }
 
+.wrapper::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; 
+}
+
+.wrapper {
+    scrollbar-width: none; 
+    -ms-overflow-style: none;  
+} 
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+}
+
 .App {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: column;
     height: 100vh;
+    width: 100vw;
     position: relative;
+    scroll-snap-align: start; /* Snap to start */
 }
 
 .chunk {
