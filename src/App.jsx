@@ -3,6 +3,8 @@ import Chunk from "./components/Chunk";
 import Home from "./components/Home";
 import Home_BL from "./components/Home_BL";
 import Home_TR from "./components/Home_TR";
+import Home_BR from "./components/Home_BR";
+import Footer from "./components/Footer";
 import "./App.css";
 
 const Section = ({ children, className }) => {
@@ -45,11 +47,14 @@ const Section = ({ children, className }) => {
 const App = () => {
   return (
     <div className="wrapper">
-      <Section className="page1">
+      {/* <a href="#section1">Go to Section 1</a> */}
+      <Section id="firstPage" className="page1">
         <Chunk direction="north">
         <Home></Home>
         </Chunk>
-        <Chunk direction="south">South</Chunk>
+        <Chunk direction="south">
+          <Home_BR></Home_BR>
+          </Chunk>
         <Chunk direction="east">
           <Home_TR></Home_TR>
         </Chunk>
@@ -57,19 +62,19 @@ const App = () => {
         <Home_BL></Home_BL>
         </Chunk>
       </Section>
-      <Section className="page2">
+      <Section id="secondPage" className="page2">
         <Chunk direction="north">North</Chunk>
         <Chunk direction="south">South</Chunk>
         <Chunk direction="east">East</Chunk>
         <Chunk direction="west">West</Chunk>
       </Section>
-      <Section className="page3">
+      <Section id="thirdPage" className="page3">
         <Chunk direction="north">North</Chunk>
         <Chunk direction="south">South</Chunk>
         <Chunk direction="east">East</Chunk>
         <Chunk direction="west">West</Chunk>
       </Section>
-      <Section className="page4">
+      <Section id="fourthPage" className="page4">
         <Chunk direction="north">North</Chunk>
         <Chunk direction="south">South</Chunk>
         <Chunk direction="east">East</Chunk>

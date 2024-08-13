@@ -1,23 +1,12 @@
 import React from "react";
-import headshot from "../assets/headshot-bg.JPG";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import "../App.css";
 
 const Home_TR = () => {
   return (
     <div className="blurb">
-      <img
-        className="headshot"
-        src={headshot}
-        style={{
-          objectFit: "contain",
-          maxWidth: "100%",
-          maxHeight: "100%",
-          borderRadius: "32px",
-        }}
-      ></img>
-      <h1 style={{ fontStyle: "italic" }}>Feeling Social?</h1>
+      <h1>Socials</h1>
       <p>Reach me at any one of these:</p>
       <div
         class="icon-grid"

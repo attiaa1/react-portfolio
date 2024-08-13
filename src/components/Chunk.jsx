@@ -14,7 +14,7 @@ const Chunk = ({ direction, children, animate = true }) => {
             x: 0,
             y: 0,
             opacity: 1,
-            transition: { duration: 1.5, ease: 'easeInOut' }
+            transition: { duration: 1.1, ease: 'easeInOut' }
         }
     };
 
