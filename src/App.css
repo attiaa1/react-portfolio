@@ -1,3 +1,6 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+
 :root {
     --primary-color: #0A1128; /* Midnight Blue */
     --secondary-color: #3B82F6; /* Bright Blue */
@@ -6,390 +9,93 @@
     --text-color: #000000; /* Black */
 }
 
+/* Base Styles */
 body {
-    font-family: 'JetBrains Mono', monospace;
-    background-color: var(--primary-color);
-    color: var(--background-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem; /* Base font size */
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+}
+
+/* FullPage.js CSS */
+html, body {
     margin: 0;
-    overflow: hidden;
-}
-
-.wrapper::-webkit-scrollbar {
-    width: 0px;
-    background: transparent; 
-}
-
-.wrapper {
-    scrollbar-width: none; 
-    -ms-overflow-style: none;  
-} 
-
-.wrapper {
-    height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-    overflow-y: auto;
-    scroll-snap-type: y mandatory;
-}
-
-html {
-    scroll-behavior: smooth;
-  }
-
-.App {
-    display: flex;
-    justify-content: center;
-    align-items: column;
-    height: 100vh;
-    width: 100vw;
-    position: relative;
-    scroll-snap-align: start; /* Snap to start */
-}
-
-.chunk {
-    background-color: var(--secondary-color);
-    color: var(--background-color);
-    padding: 20px;
-    border-radius: 10px;
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-}
-
-.blurb {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 10px;
-    width: 100%;
+    padding: 0;
     height: 100%;
-    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  .section {
     text-align: center;
+    font-size: 3em;
+    color: #fff;
   }
   
-  .blurb h1 {
+  .section:first-child {
+    background-color: #6919ff;
+  }
+  .section:nth-child(2) {
+    background-color: #0A1128;
+  }
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 0 1rem 0;
+}
+
+/* Buttons */
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Blockquote */
+blockquote {
+  font-family: 'Merriweather', serif;
+  font-size: 1.25rem;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border-left: 0.25rem solid #ccc;
+  background-color: #f9f9f9;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
     font-size: 1.5rem;
-    margin: 0.25rem 0;
   }
-  
-  .blurb p {
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  h5 {
     font-size: 1rem;
-    margin: 0.25rem 0;
-  }
-  
-  .blurb a {
-    color: #FFFFFF;
-  }
-  .blurb a:hover {
-    color: var(--accent-color);
   }
 
-  .icon-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 15px;
-    padding: 15px;
-    width: 100%
+  h6 {
+    font-size: 0.875rem;
   }
-
-.icon-item {
-    display: flex;
-    font-size: 1.5rem;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-
-.keyword {
-    background-color: #54096f;
-    font-weight: bold;
-    padding: 5px;
-    border-radius: 5px
 }
-  
-.socials {
-    color:#FFFFFF;
-    text-decoration: none;
-    transition: transform 0.5s ease-in-out;    
-}
-.socials:hover {
-    color: var(--accent-color);
-    transform: scale(1.4);
-} 
-
-
-/* Desktop layout */
-.page1 .chunk.north {
-    top: 14%;
-    left: 20%;
-    width: 30%;
-    height: 15%;
-    transform: rotate(-10deg);
-}
-
-.page1 .chunk.south {
-    top: 65%;
-    left: 53%;
-    height: 15%;
-    width: 16%;
-    transform: rotate(15deg);
-}
-
-.page1 .chunk.east {
-    top: 14%;
-    left: 53%;
-    width: 16%;
-    height: 45%;
-    transform: rotate(-5deg);
-}
-
-.page1 .chunk.west {
-    top: 35%;
-    left: 20%;
-    height: 45%;
-    width: 30%;
-    transform: rotate(5deg);
-}
-
-.page4 .chunk.north {
-    top: 14%;
-    left: 20%;
-    width: 49%;
-    height: 25%;
-    transform: rotate(-10deg);
-}
-
-.page4 .chunk.south {
-    top: 65%;
-    left: 53%;
-    height: 15%;
-    width: 16%;
-    transform: rotate(15deg);
-}
-
-.page4 .chunk.east {
-    top: 45%;
-    left: 53%;
-    width: 16%;
-    height: 14%;
-    transform: rotate(-5deg);
-}
-
-.page4 .chunk.west {
-    top: 45%;
-    left: 20%;
-    height: 35%;
-    width: 30%;
-    transform: rotate(5deg);
-}
-
-.page3 .chunk.north {
-    top: 14%;
-    left: 20%;
-    width: 10%;
-    height: 15%;
-    transform: rotate(-10deg);
-}
-
-.page3 .chunk.south {
-    top: 65%;
-    left: 33%;
-    height: 15%;
-    width: 36%;
-    transform: rotate(15deg);
-}
-
-.page3 .chunk.east {
-    top: 14%;
-    left: 33%;
-    width: 36%;
-    height: 45%;
-    transform: rotate(-5deg);
-}
-
-.page3 .chunk.west {
-    top: 35%;
-    left: 20%;
-    height: 45%;
-    width: 10%;
-    transform: rotate(5deg);
-}
-
-.page2 .chunk.north {
-    top: 14%;
-    left: 20%;
-    width: 23%;
-    height: 34%;
-    transform: rotate(-10deg);
-}
-
-.page2 .chunk.south {
-    top: 54%;
-    left: 46%;
-    height: 36%;
-    width: 23%;
-    transform: rotate(15deg);
-}
-
-.page2 .chunk.east {
-    top: 14%;
-    left: 46%;
-    width: 23%;
-    height: 34%;
-    transform: rotate(-5deg);
-}
-
-.page2 .chunk.west {
-    top: 54%;
-    left: 20%;
-    height: 36%;
-    width: 23%;
-    transform: rotate(5deg);
-}
-
-/* Mobile layout */
-@media (max-width: 768px) {
-    .chunk {
-        font-size: 1rem;
-        padding: 10px;
-    }
-
-    .page1 .chunk.north {
-        top: 5%;
-        left: 5%;
-        width: 85%;
-        height: 15%;
-        transform: rotate(0deg);
-    }
-
-    .page1 .chunk.south {
-        top: 50%;
-        left: 50%;
-        height: 40%;
-        width: 40%;
-        transform: rotate(0deg);
-    }
-
-    .page1 .chunk.east {
-        top: 25%;
-        left: 50%;
-        width: 40%;
-        height: 20%;
-        transform: rotate(0deg);
-    }
-
-    .page1 .chunk.west {
-        top: 25%;
-        left: 5%;
-        height: 65%;
-        width: 35%;
-        transform: rotate(0deg);
-    }
-
-    .page2 .chunk.north {
-        top: 2%;
-        left: 5%;
-        width: 85%;
-        height: 20%;
-        transform: rotate(0deg);
-    }
-    
-    .page2 .chunk.south {
-        top: 74%;
-        left: 5%;
-        width: 85%;
-        height: 20%;
-        transform: rotate(0deg);
-    }
-    
-    .page2 .chunk.east {
-        top: 50%;
-        left: 5%;
-        width: 85%;
-        height: 20%;
-        transform: rotate(0deg);
-    }
-    
-    .page2 .chunk.west {
-        top: 26%;
-        left: 5%;
-        height: 20%;
-        width: 85%;
-        transform: rotate(0deg);
-    }
-    .page3 .chunk.north {
-        top: 5%;
-        left: 5%;
-        width: 85%;
-        height: 15%;
-        transform: rotate(0deg);
-    }
-    
-    .page3 .chunk.south {
-        top: 50%;
-        left: 50%;
-        height: 40%;
-        width: 40%;
-        transform: rotate(0deg);
-    }
-    
-    .page3 .chunk.east {
-        top: 25%;
-        left: 50%;
-        width: 40%;
-        height: 20%;
-        transform: rotate(0deg);
-    }
-    
-    .page3 .chunk.west {
-        top: 25%;
-        left: 5%;
-        height: 65%;
-        width: 35%;
-        transform: rotate(0deg);
-    }
-}
-
-@media (max-width: 768px) {
-    .chunkPic {
-        display: none;
-    }
-
-    .keyword {
-        padding: 2px;
-    }
-
-    .icon-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
-        gap: 15px;
-        padding: 15px;
-        width: 100%
-    }
-  
-    .icon-item {
-        display: flex;
-        font-size: 1rem;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-      }
-    
-    .headshot {
-        width:fit-content;
-    }
-
-    .blurb h1 {
-        font-size: 1.5rem;
-        margin: 0.25rem 0;
-    }
-    .blurb h2 {
-        font-size: 1.25rem;
-        margin: 0.25rem 0;
-    }
-  }
