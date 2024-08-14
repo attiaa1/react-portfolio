@@ -83,6 +83,9 @@ html {
   .blurb a {
     color: #FFFFFF;
   }
+  .blurb a:hover {
+    color: var(--accent-color);
+  }
 
   .icon-grid {
     display: grid;
@@ -100,6 +103,13 @@ html {
     justify-content: center;
     text-align: center;
   }
+
+.keyword {
+    background-color: #54096f;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px
+}
   
 .socials {
     color:#FFFFFF;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGuitar, faBicycle, faPersonHiking, faPersonSnowboarding, faCat, faBook, faBookBookmark } from "@fortawesome/free-solid-svg-icons";
+import { faGuitar, faBicycle, faPersonHiking, faPersonSnowboarding, faCat, faBook, faComputer } from "@fortawesome/free-solid-svg-icons";
 import '../App.css'
 
 const Home_BR = () => {
@@ -11,27 +11,31 @@ const Home_BR = () => {
       <p>
       <FontAwesomeIcon
               icon={faBicycle}
-              style={{ fontSize: "1.5rem", margin: "10px"}}
+              style={{ fontSize: "1.5rem", padding: "0.5rem"}}
             ></FontAwesomeIcon>
       <FontAwesomeIcon
               icon={faGuitar}
-              style={{ fontSize: "1.5rem", margin: "10px"}}
+              style={{ fontSize: "1.5rem", padding: "0.5rem"}}
             ></FontAwesomeIcon>
       <FontAwesomeIcon
               icon={faPersonHiking}
-              style={{ fontSize: "1.5rem", margin: "10px"}}
+              style={{ fontSize: "1.5rem", padding: "0.5rem"}}
               ></FontAwesomeIcon>
       <FontAwesomeIcon
               icon={faPersonSnowboarding}
-              style={{ fontSize: "1.5rem", margin: "10px"}}
+              style={{ fontSize: "1.5rem", padding: "0.5rem"}}
               ></FontAwesomeIcon>
       <FontAwesomeIcon
               icon={faCat}
-              style={{ fontSize: "1.5rem", margin: "10px"}}
+              style={{ fontSize: "1.5rem", padding: "0.5rem"}}
               ></FontAwesomeIcon>
       <FontAwesomeIcon
-              icon={faBookBookmark}
-              style={{ fontSize: "1.5rem", margin: "10px"}}
+              icon={faBook}
+              style={{ fontSize: "1.5rem", padding: "0.5rem"}}
+              ></FontAwesomeIcon>
+      <FontAwesomeIcon
+              icon={faComputer}
+              style={{ fontSize: "1.5rem", padding: "0.5rem"}}
               ></FontAwesomeIcon>
       </p>
   

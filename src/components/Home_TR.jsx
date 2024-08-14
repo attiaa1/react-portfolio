@@ -7,7 +7,7 @@ const Home_TR = () => {
   return (
     <div className="blurb">
       <h1>Socials</h1>
-      <p>Reach me at any one of these:</p>
+      <p>I'm available on any of the below:</p>
       <div
         class="icon-grid"
         style={{ display: "flex", gap: "16px", justifyContent: "center" }}

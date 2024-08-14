@@ -4,7 +4,10 @@ import Home from "./components/Home";
 import Home_BL from "./components/Home_BL";
 import Home_TR from "./components/Home_TR";
 import Home_BR from "./components/Home_BR";
-import Footer from "./components/Footer";
+import Project_TL from "./components/Project_TL"
+import Project_BL from "./components/Project_BL"
+import Project_TR from "./components/Project_TR";
+import Project_BR from "./components/Project_BR";
 import "./App.css";
 
 const Section = ({ children, className }) => {
@@ -62,12 +65,22 @@ const App = () => {
         <Home_BL></Home_BL>
         </Chunk>
       </Section>
+
       <Section id="secondPage" className="page2">
-        <Chunk direction="north">North</Chunk>
-        <Chunk direction="south">South</Chunk>
-        <Chunk direction="east">East</Chunk>
-        <Chunk direction="west">West</Chunk>
+        <Chunk direction="north">
+          <Project_BL></Project_BL>
+        </Chunk>
+        <Chunk direction="south">
+          <Project_BR></Project_BR>
+        </Chunk>
+        <Chunk direction="east">
+          <Project_TR></Project_TR>
+          </Chunk>
+        <Chunk direction="west">
+          <Project_TL></Project_TL>
+        </Chunk>
       </Section>
+
       <Section id="thirdPage" className="page3">
         <Chunk direction="north">North</Chunk>
         <Chunk direction="south">South</Chunk>
