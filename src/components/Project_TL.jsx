@@ -25,7 +25,7 @@ const Project_TL = () => {
           <p style={{fontSize: "1rem", textAlign: "center"}}>
             <span className="keyword">React</span> <span className="keyword">RESTful API</span> <span className="keyword">MongoDB</span> <span className="keyword">Docker</span> 
             <br></br>
-            <img style={{padding: "10px", maxWidth: "90%", maxHeight: "90%"}} src={taskGui}></img>
+            <img className="chunkPic" style={{padding: "10px", maxWidth: "90%", maxHeight: "90%"}} src={taskGui}></img>
           </p>
         </div>
       ) : (

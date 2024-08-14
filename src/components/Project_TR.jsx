@@ -3,7 +3,9 @@ import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 import maze from "../assets/grid_empty.png";
+import maze_81 from "../assets/81_maze.png";
 import mazeSolved from "../assets/grid_solved.png";
+import mazeSolved_81 from "../assets/81_maze_solved.png";
 
 const Project_TR = () => {
   const [isExpanded, setIsExpanded] = useState("False");
@@ -29,6 +31,7 @@ const Project_TR = () => {
             <span className="keyword">Docker</span>
             <br></br>
             <img
+              className="chunkPic"
               style={{ padding: "10px" }}
               src={mazeSolved}
               height="55%"
@@ -63,7 +66,9 @@ const Project_TR = () => {
               borderRadius: "15px",
               alignItems: "center",
               padding: "15px",
-              overflowY: "auto"
+              overflowY: "auto",
+              // display: "flex",
+              // flexDirection: "column"
             }}
           >
             <FontAwesomeIcon
@@ -75,7 +80,7 @@ const Project_TR = () => {
               Maze Generator & Solver
             </h1>
             <div
-              style={{ textAlign: "center", width: "auto" }}
+              style={{ textAlign: "center", width: "auto", flexDirection: "row" }}
               class="icon-grid"
             >
               <div class="icon-item">
@@ -104,9 +109,11 @@ const Project_TR = () => {
               recursive-backtracking. I containerized the application to
               simplify deployments.
             </p>
-            <div style={{ flexDirection: "column", overflow: "auto", whiteSpace: "normal" }}>
-              <img src={maze} style={{padding: "5px", maxWidth: "50dvw", maxHeight: "50dvh", display: "inline-block"}}></img>
-              <img src={mazeSolved} style={{padding: "5px", maxWidth: "50dvw", maxHeight: "50dvh", display: "inline-block"}}></img>
+            <div style={{ width: "100%", overflowX: "auto", whiteSpace: "normal", justifyContent: "center" }}>
+              <img src={maze_81} style={{padding: "5px", maxWidth: "100dvw", maxHeight: "50dvh", display: "inline-flex"}}></img>
+              <img src={mazeSolved_81} style={{padding: "5px", maxWidth: "100dvw", maxHeight: "50dvh", display: "inline-flex"}}></img>
+              <img src={maze} style={{padding: "5px", maxWidth: "100dvw", maxHeight: "50dvh", display: "inline-flex"}}></img>
+              <img src={mazeSolved} style={{padding: "5px", maxWidth: "100dvw", maxHeight: "50dvh", display: "inline-flex"}}></img>
               </div> 
           </div>
         </div>

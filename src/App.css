@@ -291,34 +291,34 @@ html {
     }
 
     .page2 .chunk.north {
-        top: 5%;
+        top: 2%;
         left: 5%;
         width: 85%;
-        height: 15%;
+        height: 20%;
         transform: rotate(0deg);
     }
     
     .page2 .chunk.south {
-        top: 50%;
-        left: 50%;
-        height: 40%;
-        width: 40%;
+        top: 74%;
+        left: 5%;
+        width: 85%;
+        height: 20%;
         transform: rotate(0deg);
     }
     
     .page2 .chunk.east {
-        top: 25%;
-        left: 50%;
-        width: 40%;
+        top: 50%;
+        left: 5%;
+        width: 85%;
         height: 20%;
         transform: rotate(0deg);
     }
     
     .page2 .chunk.west {
-        top: 25%;
+        top: 26%;
         left: 5%;
-        height: 65%;
-        width: 35%;
+        height: 20%;
+        width: 85%;
         transform: rotate(0deg);
     }
     .page3 .chunk.north {
@@ -355,6 +355,14 @@ html {
 }
 
 @media (max-width: 768px) {
+    .chunkPic {
+        display: none;
+    }
+
+    .keyword {
+        padding: 2px;
+    }
+
     .icon-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));

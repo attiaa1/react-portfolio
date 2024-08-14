@@ -27,6 +27,7 @@ const Project_BL = () => {
             <span className="keyword">Terraform</span>
             <br></br>
             <img
+              className="chunkPic"
               style={{
                 padding: "10px",
                 width: "80%",
