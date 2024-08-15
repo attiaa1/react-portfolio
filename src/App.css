@@ -9,6 +9,22 @@
     --text-color: #000000; /* Black */
 }
 
+.fp-watermark {
+  display: none;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    background: #ffffff; /* Change this to your desired color */
+}
+
+/* Change the color of the active navigation bullet */
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span {
+    background: #ffffff; /* Change this to your desired color for the active bullet */
+}
+
+
 /* Base Styles */
 body {
   font-family: 'Roboto', sans-serif;
@@ -38,7 +54,13 @@ html, body {
     background-color: #6919ff;
   }
   .section:nth-child(2) {
-    background-color: #0A1128;
+    background-color: #13214e;
+  }
+  .section:nth-child(3) {
+    background-color: #177b40;
+  }
+  .section:nth-child(4) {
+    background-color: #780000;
   }
 
 /* Headings */

@@ -50,7 +50,7 @@ const PopUp = ({ collapsedContent, expandedContent }) => {
                 padding: "15px",
               }}
             />
-            {expandedContent}
+            {React.cloneElement(expandedContent, { closeNav: toggleExpanded })}
           </div>
         </div>
       ) : (
