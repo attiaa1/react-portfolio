@@ -18,13 +18,12 @@ const FullPageComponent = () => (
             <Hero />
           </div>
           <div id='about' className="section">
-            <h1>Section 2</h1>
-            <button onClick={() => fullpageApi.moveSectionUp()}>
-              Move up
-            </button>
+            <h1>Hi!</h1>
           </div>
           <div id='projects' className="section">
-            <h1>Section 3</h1>
+            <div className="slide">Slide 3.1</div>
+            <div className="slide">Slide 3.2</div>
+            <div className="slide">Slide 3.3</div>
           </div>
           <div id='experience' className="section">
             <h1>Section 4</h1>

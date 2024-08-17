@@ -9,6 +9,28 @@
     --text-color: #000000; /* Black */
 }
 
+/* Customize the previous arrow */
+
+.fp-controlArrow.fp-prev {
+  left: 1%;
+  top: 95%;
+  width: auto; 
+  height: auto;
+  z-index: 1001;
+  cursor: pointer;
+}
+
+/* Customize the next arrow */
+.fp-controlArrow.fp-next {
+  right: 1%;
+  top: 95%;
+  width: auto; 
+  height: auto;
+  z-index: 1001;
+  cursor: pointer;
+}
+
+
 .fp-watermark {
   display: none;
 }
@@ -50,17 +72,24 @@ html, body {
     color: #fff;
   }
   
+  /* Example Color Palette
+  Primary Color: #6919ff (Purple)
+  Complementary Color: #ffb319 (Yellow/Gold)
+  Analogous Colors: #4b19ff (Dark Purple), #19b3ff (Cyan)
+  Triadic Colors: #19ff69 (Green), #ff1969 (Pink)
+  Tetradic Colors: #ff1969 (Pink), #19ff69 (Green), #ffb319 (Yellow/Gold) */
+
   .section:first-child {
     background-color: #6919ff;
   }
   .section:nth-child(2) {
-    background-color: #13214e;
+    background-color: #ff1969;
   }
   .section:nth-child(3) {
-    background-color: #177b40;
+    background-color: #17c737;
   }
   .section:nth-child(4) {
-    background-color: #780000;
+    background-color: #ffaa00;
   }
 
 /* Headings */
