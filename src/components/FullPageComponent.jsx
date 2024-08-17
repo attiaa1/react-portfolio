@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 import Hero from './Hero';
+import About from './About';
 import '../App.css'
 
 const FullPageComponent = () => (
@@ -18,7 +19,7 @@ const FullPageComponent = () => (
             <Hero />
           </div>
           <div id='about' className="section">
-            <h1>Hi!</h1>
+            <About />
           </div>
           <div id='projects' className="section">
             <div className="slide">Slide 3.1</div>

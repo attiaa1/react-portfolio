@@ -83,13 +83,13 @@ html, body {
     background-color: #6919ff;
   }
   .section:nth-child(2) {
-    background-color: #ff1969;
+    background-color: #0A1128;
   }
   .section:nth-child(3) {
-    background-color: #17c737;
+    background-color: #ffaa00;
   }
   .section:nth-child(4) {
-    background-color: #ffaa00;
+    background-color: #17c737;
   }
 
 /* Headings */
@@ -122,6 +122,13 @@ blockquote {
   padding: 1rem;
   border-left: 0.25rem solid #ccc;
   background-color: #f9f9f9;
+}
+
+.slideParagraph {
+  font-size: 1.5rem;
+  width: 50%;
+  display: flex;
+  text-align: center;
 }
 
 /* Responsive Media Queries */
