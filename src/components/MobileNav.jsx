@@ -1,6 +1,5 @@
 import React from "react";
 import './NavBar.css';
-import fullpage from 'fullpage.js';
 
 const MobileNav = ({ closeNav }) => {
   const handleNavigation = (id) => {
@@ -24,28 +23,28 @@ const MobileNav = ({ closeNav }) => {
         onClick={() => handleNavigation("#home")}
         style={{ cursor: "pointer" }}
       >
-        HOME
+        Home
       </div>
       <div
         className="mobileNavItem"
         onClick={() => handleNavigation("#about")}
         style={{ cursor: "pointer" }}
       >
-        ABOUT
+        About
       </div>
       <div
         className="mobileNavItem"
         onClick={() => handleNavigation("#projects")}
         style={{ cursor: "pointer" }}
       >
-        PROJECTS
+        Experience
       </div>
       <div
         className="mobileNavItem"
         onClick={() => handleNavigation("#experience")}
         style={{ cursor: "pointer" }}
       >
-        EXPERIENCE
+        More
       </div>
     </div>
   );

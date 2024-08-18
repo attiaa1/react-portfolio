@@ -31,7 +31,7 @@ const PopUp = ({ collapsedContent, expandedContent }) => {
             style={{
               position: "relative",
               fontSize: "1rem",
-              backgroundColor: "#0A1128",
+              backgroundColor: "rgb(0,0,0,0.5)",
               height: "90vh",
               width: "75vw",
               borderRadius: "15px",

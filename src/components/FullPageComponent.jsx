@@ -2,6 +2,10 @@ import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 import Hero from './Hero';
 import About from './About';
+import Project1 from './Project1';
+import Project2 from './Project2';
+import Project3 from './Project3';
+import Hobbies from './Hobbies';
 import '../App.css'
 
 const FullPageComponent = () => (
@@ -22,12 +26,18 @@ const FullPageComponent = () => (
             <About />
           </div>
           <div id='projects' className="section">
-            <div className="slide">Slide 3.1</div>
-            <div className="slide">Slide 3.2</div>
-            <div className="slide">Slide 3.3</div>
+            <div className="slide">
+              <Project1 />
+            </div>
+            <div className="slide">
+              <Project2 />
+            </div>
+            <div className="slide">
+              <Project3 />
+            </div>
           </div>
           <div id='experience' className="section">
-            <h1>Section 4</h1>
+            <Hobbies />
           </div>
         </ReactFullpage.Wrapper>
       );

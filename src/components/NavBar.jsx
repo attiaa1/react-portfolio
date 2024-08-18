@@ -4,7 +4,6 @@ import { faBars, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import PopUp from "./PopUp";
 import MobileNav from "./MobileNav";
 import './NavBar.css';
-import fullpage from 'fullpage.js';
 
 const NavBar = () => {
     const handleNavigation = (id) => {
@@ -23,10 +22,10 @@ const NavBar = () => {
     return (
         <div className="navBar">
             <div className="navBarJustifyStart">
-                <div onClick={() => handleNavigation("#home")} style={{ cursor: "pointer" }} className="navItem">HOME</div>
-                <div onClick={() => handleNavigation("#about")} style={{ cursor: "pointer" }} className="navItem">ABOUT</div>
-                <div onClick={() => handleNavigation("#projects")} style={{ cursor: "pointer" }} className="navItem">PROJECTS</div>
-                <div onClick={() => handleNavigation("#experience")} style={{ cursor: "pointer" }} className="navItem">EXPERIENCE</div>
+                <div onClick={() => handleNavigation("#home")} style={{ cursor: "pointer" }} className="navItem">Home</div>
+                <div onClick={() => handleNavigation("#about")} style={{ cursor: "pointer" }} className="navItem">About</div>
+                <div onClick={() => handleNavigation("#projects")} style={{ cursor: "pointer" }} className="navItem">Experience</div>
+                <div onClick={() => handleNavigation("#experience")} style={{ cursor: "pointer" }} className="navItem">More</div>
                 <div className="navItemMobile">
                     <PopUp
                         collapsedContent={<FontAwesomeIcon style={{ cursor: "pointer" }} icon={faBars} />}

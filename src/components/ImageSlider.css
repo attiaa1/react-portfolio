@@ -13,7 +13,7 @@
 
 .custom-slide {
   flex: 0 0 auto;
-  width: 10%; /* Adjust width based on the number of images */
+  width: 5%; /* Adjust width based on the number of images */
 }
 
 @keyframes custom-slide {
@@ -21,7 +21,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%); /* Slide through the first set of images */
+    transform: translateX(-35%); /* Slide through the first set of images */
   }
 }
 
@@ -32,8 +32,8 @@
   }
 
   .custom-slider {
-    animation: custom-slide-small 10s linear infinite; /* Adjust the duration as needed */
-    padding-left: 20px; /* Add padding to prevent cut-off */
+    animation: custom-slide-small 15s linear infinite; /* Adjust the duration as needed */
+    padding-left: 10px; /* Add padding to prevent cut-off */
   }
 
   @keyframes custom-slide-small {
@@ -41,7 +41,7 @@
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-100%); /* Slide through the first set of images */
+      transform: translateX(-300%); /* Slide through the first set of images */
     }
   }
 }
