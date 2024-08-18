@@ -1,11 +1,11 @@
 #!/usr/bin/bash
 echo "Building project..."
-pm2 delete all &> /dev/null 
-npm run build &> /dev/null
-#sudo unlink /etc/nginx/sites-enabled/*
-#sudo ln -s /etc/nginx/sites-available/adamattia.me /etc/nginx/sites-enabled/
+pm2 delete all 
+npm run build
+# sudo unlink /etc/nginx/sites-enabled/*
+# sudo ln -s /etc/nginx/sites-available/adamattia.me /etc/nginx/sites-enabled/
 echo "Serving static content on port 3000..."
-pm2 start index.js -f &> /dev/null
+pm2 start index.js -f
 echo "Nginx listening on port 3000..."
-sudo nginx -s reload &> /dev/null
+sudo nginx -s reload
 echo "Website deployed: https://www.adamattia.me"

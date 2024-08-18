@@ -42,7 +42,7 @@ body {
 
 .projects img {
     width: auto;
-    max-height: 75%;
+    max-height: 65%;
   }
 
 .card-stack {
@@ -89,17 +89,18 @@ body {
     justify-content: center;
   }
   
-    .projects h1 {
-    font-size: 3rem;
-    line-height: 1.25;
-  }
-
-  .projects p {
+    .projects h3 {
     font-size: 1rem;
+    line-height: 1;
+  }
+  
+  .projects p {
+    font-size: 0.8rem;
+    line-height: 1;
   }
 
   .projects img {
-    max-width: 50%;
+    max-width: 40%;
   }
 
 }

@@ -44,7 +44,7 @@ body {
 }
 
 .hero img {
-    max-width: 15%;
+    max-width: 25%;
     height: auto;
   }
 
@@ -58,8 +58,8 @@ body {
   }
   
   .hero h1 {
-  font-size: 3rem;
-  line-height: 1.25;
+  font-size: 2rem;
+  line-height: 1;
   }
 
   .hero p {
@@ -67,7 +67,7 @@ body {
   }
 
   .hero img {
-    max-width: 50%;
+    max-width: 30%;
   }
 
 }

@@ -13,7 +13,7 @@
 
 .fp-controlArrow.fp-prev {
   left: 1%;
-  top: 95%;
+  top: 90%;
   width: auto; 
   height: auto;
   z-index: 1001;
@@ -23,7 +23,7 @@
 /* Customize the next arrow */
 .fp-controlArrow.fp-next {
   right: 1%;
-  top: 95%;
+  top: 90%;
   width: auto; 
   height: auto;
   z-index: 1001;
