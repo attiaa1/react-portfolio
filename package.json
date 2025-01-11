@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "pm2 start index.js",
+    "start": "node index.js",
     "restart": "pm2 restart index.js",
     "stop": "pm2 stop index.js",
     "dev": "vite",
@@ -21,7 +21,6 @@
     "events": "^3.3.0",
     "framer-motion": "^11.3.24",
     "fullpage.js": "^4.0.26",
-    "pm2": "^5.4.2",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.3",
     "react-dom": "^18.3.1",
@@ -29,7 +28,7 @@
     "react-intersection-observer": "^9.13.0",
     "react-pdf": "^9.0.0",
     "react-router-dom": "^6.24.0",
-    "server": "^1.0.39"
+    "server": "^1.0.41"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",

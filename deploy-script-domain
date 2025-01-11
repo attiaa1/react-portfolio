@@ -1,11 +1,6 @@
 #!/usr/bin/bash
-echo "Building project..."
-pm2 delete all 
-npm run build
-# sudo unlink /etc/nginx/sites-enabled/*
-# sudo ln -s /etc/nginx/sites-available/adamattia.me /etc/nginx/sites-enabled/
-echo "Serving static content on port 3000..."
-pm2 start index.js -f
-echo "Nginx listening on port 3000..."
-sudo nginx -s reload
-echo "Website deployed: https://www.adamattia.me"
+
+# Containerized portfolio app, below will rebuild the image and deploy
+docker compose down
+docker compose up -d --build
+docker compose up -d
