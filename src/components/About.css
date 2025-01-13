@@ -1,0 +1,41 @@
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 0 1rem;
+    height: 100dvh;
+  }
+  
+.about-content {
+  max-width: 75%;
+  padding: 1rem;
+}
+
+.about p {
+  font-size: 1.5rem;
+  margin: 0 0 2rem 0;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .about {
+      align-items: center;
+      justify-content: center;
+    }
+    
+      .about h1 {
+      font-size: 2rem;
+      line-height: 1;
+    }
+  
+    .about p {
+      font-size: 0.9rem;
+    }
+  
+    .about img {
+      max-width: 50%;
+    }
+
+}
