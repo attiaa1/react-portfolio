@@ -72,13 +72,6 @@ html, body {
     color: #fff;
   }
   
-  /* Example Color Palette
-  Primary Color: #6919ff (Purple)
-  Complementary Color: #ffb319 (Yellow/Gold)
-  Analogous Colors: #4b19ff (Dark Purple), #19b3ff (Cyan)
-  Triadic Colors: #19ff69 (Green), #ff1969 (Pink)
-  Tetradic Colors: #ff1969 (Pink), #19ff69 (Green), #ffb319 (Yellow/Gold) */
-
   .section:first-child {
     background-color: #03071E;
   }
@@ -104,6 +97,17 @@ html, body {
     background-color: #E85D04;
   }
 
+  .section:nth-child(8) {
+    background-color: #F48C06;
+  }
+
+  .section:nth-child(9) {
+    background-color: #FAA307;
+  }
+
+  .section:nth-child(10) {
+    background-color: #FFBA08;
+  }
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;

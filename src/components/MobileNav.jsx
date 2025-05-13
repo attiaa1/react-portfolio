@@ -37,7 +37,7 @@ const MobileNav = ({ closeNav }) => {
         onClick={() => handleNavigation("#projects")}
         style={{ cursor: "pointer" }}
       >
-        Experience
+        Work
       </div>
       <div
         className="mobileNavItem"

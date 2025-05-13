@@ -6,11 +6,10 @@ const Hero = () => {
   return (
     <section className="hero">
       <div className="hero-content">
-        <img alt="Caricature of my cat and I" src={Caricature}></img>
+
         <h1>Hi, I'm Adam Attia!</h1>
         <p>
-          Full-stack Developer & Software Engineer with a love for scalable
-          solutions, music, and cats. If you're looking for my resume, you can
+          Software Developer based in Philadelphia with a love for Linux, music, and cats. If you're looking for my resume, you'll
           find it{" "}
           <a
             style={{ color: "white", padding: "2px" }}

@@ -81,6 +81,28 @@ body {
   font-size: 14px;
   opacity: 0.8;
 }
+
+.tech-stack-list {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding: 0;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.tech-stack-item {
+  padding: 10px 20px;
+  background-color: white;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+  font-size: 1rem;
+  color: black;
+  font-weight: bold;
+  font-style: italic;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
   
 /* Responsive Media Queries */
 @media (max-width: 768px) {
@@ -95,8 +117,8 @@ body {
   }
   
   .projects p {
-    font-size: 0.8rem;
-    line-height: 1;
+    font-size: 0.9rem;
+    line-height: 1.15;
   }
 
   .projects img {

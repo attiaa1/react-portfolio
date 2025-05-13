@@ -24,7 +24,7 @@ const NavBar = () => {
             <div className="navBarJustifyStart">
                 <div onClick={() => handleNavigation("#home")} style={{ cursor: "pointer" }} className="navItem">Home</div>
                 <div onClick={() => handleNavigation("#about")} style={{ cursor: "pointer" }} className="navItem">About</div>
-                <div onClick={() => handleNavigation("#projects")} style={{ cursor: "pointer" }} className="navItem">Experience</div>
+                <div onClick={() => handleNavigation("#projects")} style={{ cursor: "pointer" }} className="navItem">Work</div>
                 <div onClick={() => handleNavigation("#experience")} style={{ cursor: "pointer" }} className="navItem">More</div>
                 <div className="navItemMobile">
                     <PopUp

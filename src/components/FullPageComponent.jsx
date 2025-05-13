@@ -5,6 +5,7 @@ import About from './About';
 import Project1 from './Project1';
 import Project2 from './Project2';
 import Project3 from './Project3';
+import Work1 from './Work1';
 import Hobbies from './Hobbies';
 import '../App.css'
 
@@ -26,13 +27,13 @@ const FullPageComponent = () => (
             <About />
           </div>
           <div id='projects' className="section">
-            <Project2 />
+            <Work1 />
           </div>
           <div id='projects' className="section">
-            <Project2 />
+            <h1>Hello World 2!</h1>
           </div>
           <div id='projects' className="section">
-            <Project2 />
+            <h1>Hello World 3!</h1>
           </div>
           <div id='experience' className="section">
             <Hobbies />
