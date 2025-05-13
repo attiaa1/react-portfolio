@@ -26,15 +26,13 @@ const FullPageComponent = () => (
             <About />
           </div>
           <div id='projects' className="section">
-            <div className="slide">
-              <Project1 />
-            </div>
-            <div className="slide">
-              <Project2 />
-            </div>
-            <div className="slide">
-              <Project3 />
-            </div>
+            <Project2 />
+          </div>
+          <div id='projects' className="section">
+            <Project2 />
+          </div>
+          <div id='projects' className="section">
+            <Project2 />
           </div>
           <div id='experience' className="section">
             <Hobbies />

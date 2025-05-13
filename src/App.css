@@ -80,16 +80,28 @@ html, body {
   Tetradic Colors: #ff1969 (Pink), #19ff69 (Green), #ffb319 (Yellow/Gold) */
 
   .section:first-child {
-    background-color: #6919ff;
+    background-color: #03071E;
   }
   .section:nth-child(2) {
-    background-color: #0A1128;
+    background-color: #370617;
   }
   .section:nth-child(3) {
-    background-color: #9a005c;
+    background-color: #6A040F;
   }
   .section:nth-child(4) {
-    background-color: #9a0300;
+    background-color: #9D0208;
+  }
+
+  .section:nth-child(5) {
+    background-color: #D00000;
+  }
+
+  .section:nth-child(6) {
+    background-color: #DC2F02;
+  }
+
+  .section:nth-child(7) {
+    background-color: #E85D04;
   }
 
 /* Headings */

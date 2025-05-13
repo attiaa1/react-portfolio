@@ -27,8 +27,7 @@ const About = () => {
         <div className='about'>
             <div className='about-content'>
                 <p>At my core, I'd say I'm a <span style={{fontStyle: "italic"}}>problem solver</span>, and that's influenced everything from my hobbies to my studies. I've always had a knack for taking things apart to see how they work, and it wasn't until my freshman year of undergrad that I realized that this was part of reverse-engineering.</p>
-                <p>I started my engineering journey as an Electrical Engineer, and due to the opportunity to work on some embedded systems during grad school, I realized my true calling was in the software world.</p>
-                <p>Since then, I've had the opportunity in my current role as a Software Engineer to work with some incredible tech stacks.</p>
+                <p>From all of my experience as a Software Engineer, I've had some time to familiarize myself with some incredible tech stacks, mentor newer developers, update existing codebases, and learn so much from my colleagues.</p>
                 <div>
                     <ImageSlider images={images}/>
                 </div>
