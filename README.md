@@ -1,4 +1,4 @@
-# This site was created using ReactJS, and Vite. It's being served off my personal Ubuntu Server with Nginx as a reverse proxy.
+# This site was created using ReactJS, and Vite. 
 
 ## Instructions on how to run:
 
