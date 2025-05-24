@@ -4,6 +4,7 @@ import Hero from './Hero';
 import About from './About';
 import Work1 from './Work1';
 import Work2 from './Work2';
+import Work3 from './Work3';
 import Hobbies from './Hobbies';
 import '../App.css'
 
@@ -31,7 +32,7 @@ const FullPageComponent = () => (
                         <Work2 />
                     </div>
                     <div id='projects' className="section">
-                        <h1>Hello World 3!</h1>
+                        <Work3 />
                     </div>
                     <div id='experience' className="section">
                         <Hobbies />

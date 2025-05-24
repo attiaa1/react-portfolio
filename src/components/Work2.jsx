@@ -17,9 +17,9 @@ const Work2 = () => {
                 <p>
                     <ul>
                         <li>Developed React app to display ActiveMQ plane tracks via OpenStreetMap API.</li>
-                        <li>Designed Terraform modules to spin-up cost-effective dev environments and worker nodes in Azure.</li>
+                        <li>Designed Terraform modules to create cost-effective dev environments and worker nodes in Azure.</li>
                         <li>Containerized and wrote helm charts to deploy scalable cluster of apps with Kubernetes.</li>
-                        <li>Created Gitlab CI/CD pipelines to validate code, apply any changes from developers to staging environment, and maximize uptime.</li>
+                        <li>Created Gitlab CI/CD pipelines to validate code, apply changes from developers to staging environment, and maximize uptime.</li>
                     </ul>
                 </p>
             </div>
