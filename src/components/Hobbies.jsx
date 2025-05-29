@@ -26,7 +26,7 @@ const Hobbies = () => {
                     I plan to automate this via CI/CD pipeline in the near future!
                 </p>
 
-                <h3>Hobbies</h3>
+                <h3>Hobbies (cont'd)</h3>
                 <p>
                     <FontAwesomeIcon
                         icon={faBicycle}

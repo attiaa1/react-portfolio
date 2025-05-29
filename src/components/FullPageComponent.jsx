@@ -6,6 +6,7 @@ import Work1 from './Work1';
 import Work2 from './Work2';
 import Work3 from './Work3';
 import Hobbies from './Hobbies';
+import Now from './Now';
 import '../App.css'
 
 const FullPageComponent = () => (
@@ -36,6 +37,9 @@ const FullPageComponent = () => (
                     </div>
                     <div id='experience' className="section">
                         <Hobbies />
+                    </div>
+                    <div id='experience' className="section">
+                        <Now />
                     </div>
                 </ReactFullpage.Wrapper>
             );
