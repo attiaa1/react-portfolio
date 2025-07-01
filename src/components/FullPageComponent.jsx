@@ -5,8 +5,8 @@ import About from './About';
 import Work1 from './Work1';
 import Work2 from './Work2';
 import Work3 from './Work3';
+import AboutThisPage from './AboutThisPage';
 import Hobbies from './Hobbies';
-import Now from './Now';
 import '../App.css'
 
 const FullPageComponent = () => (
@@ -17,7 +17,7 @@ const FullPageComponent = () => (
         loopBottom={'True'}
         navigation={'true'}
 
-        render={({ state, fullpageApi }) => {
+        render={() => {
             return (
                 <ReactFullpage.Wrapper>
                     <div id='home' className="section">
@@ -36,10 +36,10 @@ const FullPageComponent = () => (
                         <Work3 />
                     </div>
                     <div id='experience' className="section">
-                        <Hobbies />
+                        <AboutThisPage />
                     </div>
                     <div id='experience' className="section">
-                        <Now />
+                        <Hobbies />
                     </div>
                 </ReactFullpage.Wrapper>
             );

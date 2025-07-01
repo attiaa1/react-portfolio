@@ -1,32 +1,43 @@
 import React from "react";
+import "./Hobbies.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+    faFloppyDisk,
+    faLanguage,
+    faUtensils,
     faGuitar,
     faBicycle,
     faPersonHiking,
     faPersonSnowboarding,
-    faCat,
     faBook,
-    faComputer,
 } from "@fortawesome/free-solid-svg-icons";
-import "./About.css";
 
 const Hobbies = () => {
     return (
         <div className="about">
             <div className="about-content">
-                <h3>More about this site!</h3>
-                <p>
-                    This page was created using{" "}
-                    <a href="https://react.dev/" style={{ color: "white" }}>
-                        React
-                    </a>
-                    , and uses Nginx as a reverse-proxy to point to my server with a personalized DNS
-                    via HTTPS. I created a Bash script to automate deployment in my repo, but
-                    I plan to automate this via CI/CD pipeline in the near future!
+                <h4>My Hobbies</h4>
+                <h6>Tech Recycling&nbsp;
+                    <FontAwesomeIcon
+                        icon={faFloppyDisk}
+                    />
+                </h6>
+                <p>Repairing and installing Linux on secondhand systems to bring them new life, using them to self-host my media, music, images, and smart home setup.
                 </p>
 
-                <h3>Hobbies (cont'd)</h3>
+                <h6>Learning Language&nbsp;
+                    <FontAwesomeIcon
+                        icon={faLanguage}
+                    />
+                </h6>
+                <p>Currently I'm learning Arabic, to add to my arsenal of Spanish, and French. I love speaking to people in their native language and seeing their face light up.</p>
+
+                <h6>Cooking&nbsp;
+                    <FontAwesomeIcon
+                        icon={faUtensils}
+                    />
+                </h6>
+                <p>I have been cooking dishes such as red lentil daal and KBBQ marinated chicken thighs recently to explore these flavor profiles and save money on eating out.</p>
                 <p>
                     <FontAwesomeIcon
                         icon={faBicycle}
@@ -45,18 +56,9 @@ const Hobbies = () => {
                         style={{ fontSize: "2rem", padding: "0.5rem" }}
                     ></FontAwesomeIcon>
                     <FontAwesomeIcon
-                        icon={faCat}
-                        style={{ fontSize: "2rem", padding: "0.5rem" }}
-                    ></FontAwesomeIcon>
-                    <FontAwesomeIcon
                         icon={faBook}
                         style={{ fontSize: "2rem", padding: "0.5rem" }}
                     ></FontAwesomeIcon>
-                    <FontAwesomeIcon
-                        icon={faComputer}
-                        style={{ fontSize: "2rem", padding: "0.5rem" }}
-                    ></FontAwesomeIcon>
-                    <br></br>I also do indoor rock climbing pretty often, but there's not a cohesive icon for that :)
                 </p>
             </div>
         </div>

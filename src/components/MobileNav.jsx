@@ -8,7 +8,8 @@ const MobileNav = ({ closeNav }) => {
             "#home": 0,
             "#about": 1,
             "#work": 2,
-            "#more": 5
+            "#more": 5,
+            "#hobbies": 6
         }[id];
 
         if (sectionIndex !== undefined) {
@@ -45,6 +46,13 @@ const MobileNav = ({ closeNav }) => {
                 style={{ cursor: "pointer" }}
             >
                 More
+            </div>
+            <div
+                className="mobileNavItem"
+                onClick={() => handleNavigation("#hobbies")}
+                style={{ cursor: "pointer" }}
+            >
+                Hobbies
             </div>
         </div>
     );
