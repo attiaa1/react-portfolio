@@ -1,205 +1,175 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+
 :root {
-  --primary-color: #2c3e50;
-  --secondary-color: #8e44ad;
-  --accent-color: #e67e22;
-  --text-color: #ecf0f1;
-  --border-color: #95a5a6;
+    --primary-color: #0A1128; /* Midnight Blue */
+    --secondary-color: #3B82F6; /* Bright Blue */
+    --accent-color: #F59E0B; /* Amber */
+    --background-color: #FFFFFF; /* White */
+    --text-color: #000000; /* Black */
 }
 
-body,html {
+/* Customize the previous arrow */
+
+.fp-controlArrow.fp-prev {
+  left: 1%;
+  top: 90%;
+  width: auto; 
+  height: auto;
+  z-index: 1001;
+  cursor: pointer;
+}
+
+/* Customize the next arrow */
+.fp-controlArrow.fp-next {
+  right: 1%;
+  top: 90%;
+  width: auto; 
+  height: auto;
+  z-index: 1001;
+  cursor: pointer;
+}
+
+
+.fp-watermark {
+  display: none;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    background: #ffffff; /* Change this to your desired color */
+}
+
+/* Change the color of the active navigation bullet */
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span {
+    background: #ffffff; /* Change this to your desired color for the active bullet */
+}
+
+
+/* Base Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem; /* Base font size */
+  line-height: 1.6;
   margin: 0;
   padding: 0;
-  font-family: 'Nunito Sans', sans-serif;
-  color: var(--text-color);
-  width: 100%;
-  height: 100%;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-}
-
-.bg {
-  background-image: url('./assets/bg.avif');
-  /* background-position: center; */
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  background-repeat: no-repeat;
-  flex-direction: column;
-}
-
-.centered-block {
-  width: 80dvw;
-  text-align: center;
-  font-size: 24px;
-  color: var(--text-color);
-}
-
-.navBar {
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 10dvh;
-  width: 100%;  
-  position: sticky; 
-  top: 0; 
-  transition: background-color 0.5s ease;
-}
-
-.navItem {
-  color: var(--text-color);
-  font-weight: bold;
-  font-size: 18px;
-  width: 100%;
-  margin: 10px;
-}
-
-.navItem:hover {
-  color: var(--accent-color);
-}
-
-.logo {
-  width: 100px;
-  height: 100px;
-  align-items: center;
-  flex-direction: column;
-}
-
-.ulNav {
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: row;
-  width: 25dvw;
-  padding: 5px;
-}
-
-ul {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.myLink {
-  color: var(--text-color);
-}
-
-.myLink:hover{
-  color: var(--accent-color)
-}
-
-.resume {
-  color: var(--text-color);
-  font-size: 20px;
-  font-style: italic;
-}
-
-.resume:hover{
-  color: var(--accent-color)
-}
-
-.skillsGrid {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  flex-wrap: wrap; 
-}
-
-.tech-logo {
-  margin: 25px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.tech-logo:hover {
-  transform: scale(1.2);
-  color: greenyellow;
-}
-
-.contact-logo {
-  margin: 15px;
-  display: inline-flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.contact-logo:hover {
-  transform: scale(1.4);
-  color: greenyellow
-}
-
-.blurb {
-  color: var(--text-color);
-  display: inline-block;
-  width: 90dvw;
-  clear: both;
-
-}
-.blurbUL {
-  color: var(--text-color);
-  display: inline-block;
-  width: 80dvw;
-  clear: both;
-
-}
-
-.emailBox {
-  background-color: #34495e;
-  color: var(--text-color);
-  padding: 20px;
-  margin: 10px;
-  font-size: 24px;
-  line-height: 1.5;
-  border-radius: 25px;
-  width: 50%;
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.email, .msg {
-  display: space-around;
-  width: 70%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  border: 1px solid var(--border-color);
-  background-color: var(--text-color);
+  background-color: var(--background-color);
   color: var(--primary-color);
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 16px;
 }
 
-.btn {
-  display: space-around;
-  background-color: #9b59b6;
-  width: 70%;
-  font-family: 'Nunito Sans', sans-serif;
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  color: var(--text-color);
+/* FullPage.js CSS */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+  }
   
+  .section {
+    text-align: center;
+    font-size: 3em;
+    color: #fff;
+  }
+  
+  .section:first-child {
+    background-color: #03071E;
+  }
+  .section:nth-child(2) {
+    background-color: #370617;
+  }
+  .section:nth-child(3) {
+    background-color: #6A040F;
+  }
+  .section:nth-child(4) {
+    background-color: #9D0208;
+  }
+
+  .section:nth-child(5) {
+    background-color: #D00000;
+  }
+
+  .section:nth-child(6) {
+    background-color: #DC2F02;
+  }
+
+  .section:nth-child(7) {
+    background-color: #E85D04;
+  }
+
+  .section:nth-child(8) {
+    background-color: #F48C06;
+  }
+
+  .section:nth-child(9) {
+    background-color: #FAA307;
+  }
+
+  .section:nth-child(10) {
+    background-color: #FFBA08;
+  }
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 0 1rem 0;
+}
+
+/* Buttons */
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #007bff;
+  color: #fff;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
 }
 
-.btn:hover{
-  background-color: var(--secondary-color)
+button:hover {
+  background-color: #0056b3;
 }
 
-.footer {
-  background-color: var(--primary-color);
-  color: var(--text-color);
-  border-top: 1px solid var(--border-color);
-  bottom: 0;
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: space-around;
-  font-size: 14px;
-  align-items: center;
-  height: 5dvh;
-  width: 100%;  
-  position: relative; 
+/* Blockquote */
+blockquote {
+  font-family: 'Merriweather', serif;
+  font-size: 1.25rem;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border-left: 0.25rem solid #ccc;
+  background-color: #f9f9f9;
+}
+
+.slideParagraph {
+  font-size: 1.5rem;
+  width: 50%;
+  display: flex;
+  text-align: center;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  h6 {
+    font-size: 0.875rem;
+  }
 }
