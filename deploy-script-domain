@@ -1,6 +1,4 @@
 #!/usr/bin/bash
 
-# Containerized portfolio app, below will rebuild the image and deploy
-docker compose down
-docker compose up -d --build
-docker compose up -d
+docker build -t react-portfolio .
+docker run --rm -d -t react-portfolio -p 3000:3000 -e 'NODE_ENV=production' react-portfolio
